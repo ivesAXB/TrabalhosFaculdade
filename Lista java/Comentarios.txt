@@ -12,3 +12,21 @@ FonteDosDados (FonteDosDados) é uma boa prática eu fechar este leitor no final
 
 -Math.pow(base, expoente); pode ser utilizado dentro de uma outra variavel quando não precisar guardar ela.
 
+-Ao realizar o exercicio 6 eu me deparei com o problema: 
+    if (bool_1 == "sim") {
+        for (int i = 0; i < 10; i++) {
+           System.out.println(i);
+        }
+    }
+Não estava entrando no if, bool_1 é uma String que o user digita, mas aprendi que para verificar uma condição com uma variável tipo string devo usar:
+    if (bool_1.equals("sim")) {
+        System.out.println("Entrou no if!");
+    }
+a função ou método .equals ("");
+
+Pode até misturar isso com o método .trim(); e .equalsIgnoreCase();
+
+-No exercício 7 me deparei com um problema um pouco pior que os anteriores, que foi criar uma array, ao descobrir que utiliza-se o comando: double[] valores = new double[n-1];
+para criar uma array, eu entendi que na verdade array é parecido com o objeto. TipoArray[] variavel = new Tipo[tamanho];
+
+-Ler os comentarios no exercicio 7, talvez sejam bem importantes e é melhor para entender por lá.
