@@ -1,3 +1,8 @@
-- Primeiro erro que me deparei foi tentar executar/compilar o arquivo que eu estava editando, sendo que eu não estava nem na pasta TrabalhosFaculdade.
+- Primeiro erro que me deparei foi tentar executar/compilar o arquivo que eu estava editando, sendo que eu não estava nem na pasta
+TrabalhosFaculdade.
 
-- 
+- Para criar classe: NomeDaClasse NomeDaVariavel = new NomeClasse(FonteDosDados)
+
+- Ao criar a classe Scanner, e criar a variável que vou utilizar para ler (variavel leitor) e adicionar a fonte de onde sairá esses 
+FonteDosDados (FonteDosDados) é uma boa prática eu fechar este leitor no final do uso com a função leitor.close(); 
+
