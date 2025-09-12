@@ -6,3 +6,9 @@ TrabalhosFaculdade.
 - Ao criar a classe Scanner, e criar a variável que vou utilizar para ler (variavel leitor) e adicionar a fonte de onde sairá esses 
 FonteDosDados (FonteDosDados) é uma boa prática eu fechar este leitor no final do uso com a função leitor.close(); 
 
+- Uma observação, ao aparecer o Primeiro erro que eu citei, eu tentei rodar com o comando javac .... e criou uma pasta .class, a compilada.
+
+-Descobri também que não tem exponemciação em java então precisei utilizar um método chamado math.pow();
+
+-Math.pow(base, expoente); pode ser utilizado dentro de uma outra variavel quando não precisar guardar ela.
+
