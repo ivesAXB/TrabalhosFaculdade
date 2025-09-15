@@ -52,5 +52,6 @@ System.out.println("Quantos números irá digitar? ");
             }  ------------------------------------------------------------------------------------------|tentar ler um a mais que não existe.
             System.out.printf("Pegando o número %d e colocando no indice %d.\n",inteiros[i], i);
         }
+(O código não funciona para numeros negativos, para funcionar apenas com números negativos basta apenas atribuir o valor maior para o primeiro numero da array)
 
--
+-Perdendo os cabelos aprendendo a fazer um método de ordenação crescentes de números com recursão (exercicio 12).
