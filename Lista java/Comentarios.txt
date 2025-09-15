@@ -30,3 +30,10 @@ Pode até misturar isso com o método .trim(); e .equalsIgnoreCase();
 para criar uma array, eu entendi que na verdade array é parecido com o objeto. TipoArray[] variavel = new Tipo[tamanho];
 
 -Ler os comentarios no exercicio 7, talvez sejam bem importantes e é melhor para entender por lá.
+
+-Ok cheguei em uma parte que eu tive que recorrer à ajuda da IA, na questão 10 eu sabia que eu precisava usar recursão, eu ja li sobre recursão em um livro, porém
+eu não tinha a menor ideia de como eu faria isso, pensei em todos os for possíveis, while e if, mas eu esqueci completamente da existencia de FUNÇÕES.
+
+-Custou para eu entender o que acontecia dentro de uma recursão, em livros parece muito mais fácil, mas eu admito que sem o livro eu não entenderia, tenho certeza, nao da
+forma que entendi, concluí que a melhor maneira de aprender isso seria com o livro em uma mão, o código em outra, e um chatIA na terceira mão (como vai conseguir ela é com você).
+
