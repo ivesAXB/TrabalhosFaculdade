@@ -37,3 +37,20 @@ eu não tinha a menor ideia de como eu faria isso, pensei em todos os for possí
 -Custou para eu entender o que acontecia dentro de uma recursão, em livros parece muito mais fácil, mas eu admito que sem o livro eu não entenderia, tenho certeza, nao da
 forma que entendi, concluí que a melhor maneira de aprender isso seria com o livro em uma mão, o código em outra, e um chatIA na terceira mão (como vai conseguir ela é com você).
 
+-Ao realizar o exercício 11 eu notei que por mais que eu entenda como funciona o for, ainda causa um nó bem grande na minha cabeça, então resolvi deixar uma logica aqui:
+System.out.println("Quantos números irá digitar? ");   
+        int n = leitor.nextInt(); ---------------------------------------------------------------------->|ele vai ler o indice e atribuir à uma variavel
+        System.out.println("Digite uma sequencia de números"); ----------------------------------------->|ele vai pedir os números, mas eu só vou ler dentro do for.
+        int[] inteiros = new int[n]; ------------------------------------------------------------------->|me engano achando que ele vai ler aqui, mas aqui é para criar o objeto.
+
+        int maior_numero = 0; -------------------------------------------------------------------------->|só para exercicio de buscar maior número.
+
+        for (int i = 0; i < n; i++){ ------------------------------------------------------------------->|aqui a brincadeira começa, aqui o i precisa entrar como índice...
+            inteiros[i] = leitor.nextInt(); ------------------------------------------------------------>|se eu colocar ele como i = 1 ele vai ler o indice 0 como 1 e isso vai 
+            if(maior_numero < inteiros[i]){ -------------------------------------------------------------|causar um certo conflito pq ele vai começar a ler do incide 1, e vai
+                maior_numero = inteiros[i]; -------------------------------------------------------------|até o índice 6, que não existe, ou seja ele vai ler 1 a menos e depois
+            }  ------------------------------------------------------------------------------------------|tentar ler um a mais que não existe.
+            System.out.printf("Pegando o número %d e colocando no indice %d.\n",inteiros[i], i);
+        }
+
+-
