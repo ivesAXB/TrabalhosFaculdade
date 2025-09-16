@@ -55,3 +55,33 @@ System.out.println("Quantos números irá digitar? ");
 (O código não funciona para numeros negativos, para funcionar apenas com números negativos basta apenas atribuir o valor maior para o primeiro numero da array)
 
 -Perdendo os cabelos aprendendo a fazer um método de ordenação crescentes de números com recursão (exercicio 12).
+
+-Segundo dia no exercício 12;
+int meio = (arrayParaOrdenar.length/2); ----------------------------------> essa foi uma definição importante, pois aqui eu digo quanto de tamanho vai ter cada uma metade
+        int[] metadeesquerda = new int[meio]; ----------------------------> a parte do meio esquerda pode ter 2,5 lenght que arredondaria para 3
+        int[] metadedireita = new int[(arrayParaOrdenar.length - meio)]; ---> automaticamente o meio direito teria 2 (5-3)
+    
+if (arrayParaOrdenar.length <= 1){ ---------------------------------------> Até aqui estava tudo bem, entendi que se tiver 1 de tamanho vai retornar só ele,
+                return arrayParaOrdenar; ---------------------------------> em seguida no else (se nao tiver só 1 de tamanho) vou fazer um for para atribuir
+            } else { -----------------------------------------------------> informações na parte esquerda, e outro para atribuir informações na parte direita
+                for(int i = 0; i < meio; i++){ ---------------------------> sendo a esquerda começando no indice 0 e indo até o indice 'meio'
+                    metadeesquerda[i] = arrayParaOrdenar[i]; -------------> e a parte direita eu começo meu incide no 'meio' e vou até o tamanho total da array.
+                } --------------------------------------------------------> 
+                for(int i = meio; i < arrayParaOrdenar.length; i++){ -----> Mas não funcionou.
+                    metadedireita[i - meio] = arrayParaOrdenar[i]; --------------> <- nesta linha repare que o arrayParaOrdenar nao pode ter indice [i] pois ja usei eles acima.
+                } --------------------------------------------------------> talvez se eu utilizar metadedireita[i-meio] (?vou testar)
+
+- Ok funcionou perfeitamente e me orgulho de ter entendido e achado uma saída para isso, se eu utilizasse metadedireita[meio] eu iria atribuir valor à um indice além dos iniciais,
+ou seja, eu deixaria o inicio da array metadedireita vazia, estourando no final pois o for continuaria tentando colocar valores nos indices que nao existe no tamanho da array.
+exemplo: 
+utilizando 12 valores: 
+metadeesquerda[6] e inicia em 0 até 6
+metadedireita[12-6] e inicia em 6 (meio) = metadedireita[6] com o loop iniciando no indice meio (6)...
+da forma que fiz ele inicia sim no indice 6, mas eu retiro o valor 'meio' do indice metadedireita, ou seja metadedireita[6-6=0], segundo tic do loop seria: metadedireita[7-6=1]
+
+- Com isso eu acredito que pulo uma etapa de aprendizagem que seria utilizar mais de uma variável no parametro do for, onde eu usaria j = 0 para definir o indice do metadedireita
+e i = meio para definir o indice do arrayParaOrdenar.
+
+-
+
+
