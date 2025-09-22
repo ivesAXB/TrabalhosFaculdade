@@ -47,22 +47,6 @@ public class Exercicio14 {
             }
         }
 
-
-
-
-
-
-        
-
-        for(int j = 0; j < tamanho_array_sem_repeticao; j++){
-            for(int i = j + 1; i < n; i++){
-                if(array_para_analise[j] != array_para_analise[i]){
-                    array_sem_repeticao[j] = array_para_analise[j];
-                    
-                    break;
-                }
-            }
-        }
         
         System.out.println(Arrays.toString(array_sem_repeticao));
         
