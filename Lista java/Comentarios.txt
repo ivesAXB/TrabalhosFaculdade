@@ -82,6 +82,22 @@ da forma que fiz ele inicia sim no indice 6, mas eu retiro o valor 'meio' do ind
 - Com isso eu acredito que pulo uma etapa de aprendizagem que seria utilizar mais de uma variável no parametro do for, onde eu usaria j = 0 para definir o indice do metadedireita
 e i = meio para definir o indice do arrayParaOrdenar.
 
+-O exercicio 14 também foi bem dificil de fazer, eu tinha toda a lógica na mente mas nao conseguia colocar em pratica, eu sabia que se eu usasse:
+
+for(int j = 0; j < n; j++){                                              | Eu teria o seguinte problema: Utilizando 1 em todas as casas
+            for(int i = j + 1; i < n; i++){                              | array[0] == array[1] (1,1) repetido = 1 | Dessa forma eu teria 10 repetidos, tendo apenas 5
+                if((array_para_analise[j] == array_para_analise[i])){    | array[0] == array[2] (1,1) repetido = 2 | valores na array, concluí que, ao perceber que se o elemento
+                    repetidos++;                                         | array[0] == array[3] (1,1) repetido = 3 | da array da esqueda já tivesse um valor igual, eu deveria
+                }                                                        | array[0] == array[4] (1,1) repetido = 4 | adicionar mais 1 aos repetidos, e parar de comparar ele com
+            }                                                            | array[1] == array[2] (1,1) repetido = 5 | outros e deixar esse trabalho para o próximo elemento
+        }                                                                | array[1] == array[3] (1,1) repetido = 6 | da array, então coloquei um break; se o repetidos ganhasse
+                                                                         | array[1] == array[4] (1,1) repetido = 7 | mais um valor, dessa forma eu estou limitando a contadem de
+                                                                         | array[2] == array[3] (1,1) repetido = 8 | repetidos à 1 por elemento da array.
+                                                                         | array[2] == array[4] (1,1) repetido = 9 |
+                                                                         | array[3] == array[4] (1,1) repetido = 10|
+
+-Excluí o exercicio 14 e comecei do zero.
+
+-Dessa vez vou tentar analisar os numeros ao mesmo tempo que eu crio o array sem repetições.
+
 -
-
-

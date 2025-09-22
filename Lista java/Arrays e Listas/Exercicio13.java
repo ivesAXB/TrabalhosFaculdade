@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class exercicio13 {
+public class Exercicio13 {
     public static void main(String[] args){
         Scanner leitor = new Scanner(System.in);
         System.out.println("Quantos valores vai calcular? ");
@@ -19,7 +19,7 @@ public class exercicio13 {
             valor_total = valor_total + valores_para_media[i];
         }
 
-        double calc_media = valor_total/n;
+        double calc_media = (double) valor_total/n;
 
         System.out.printf("A média da lista de valores é: %.2f", calc_media);
 
